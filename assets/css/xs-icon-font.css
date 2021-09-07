@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "xsfont";
+  src: url("../fonts/xsfont.eot?3cn8dm");
+  src: url("../fonts/xsfont.eot?3cn8dm#iefix") format("embedded-opentype"),
+    url("../fonts/xsfont.ttf?3cn8dm") format("truetype"),
+    url("../fonts/xsfont.woff?3cn8dm") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.xsicon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "xsfont" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.xsicon-arrow:before {
+  content: "\e900";
+}
+.xsicon-free-hand-training:before {
+  content: "\e901";
+}
+.xsicon-heartbit:before {
+  content: "\e902";
+}
+.xsicon-hill-tracts:before {
+  content: "\e903";
+}
+.xsicon-muscle:before {
+  content: "\e904";
+}
+.xsicon-punch-gloves:before {
+  content: "\e905";
+}
+.xsicon-weight-lifting:before {
+  content: "\e906";
+}
+.xsicon-arrow-right:before {
+  content: "\e907";
+}
+.xsicon-building:before {
+  content: "\e908";
+}
+.xsicon-check:before {
+  content: "\e909";
+}
+.xsicon-clock:before {
+  content: "\e90a";
+}
+.xsicon-download-pdf-icon:before {
+  content: "\e90b";
+}
+.xsicon-handshake:before {
+  content: "\e90c";
+}
+.xsicon-home:before {
+  content: "\e90d";
+}
+.xsicon-mail:before {
+  content: "\e90e";
+}
+.xsicon-map-pin:before {
+  content: "\e90f";
+}
+.xsicon-message-icon:before {
+  content: "\e910";
+}
+.xsicon-paper:before {
+  content: "\e911";
+}
+.xsicon-phone:before {
+  content: "\e912";
+}
+.xsicon-quote:before {
+  content: "\e913";
+}
+.xsicon-send:before {
+  content: "\e914";
+}
+.xsicon-vote:before {
+  content: "\e915";
+}
+.xsicon-wallet:before {
+  content: "\e916";
+}
+.xsicon-writing:before {
+  content: "\e917";
+}

@@ -1,0 +1,35 @@
+.xs-about-us {
+  .iconbox-title {
+    margin: {
+      top: rem(25px);
+      bottom: rem(15px);
+    }
+    font-size: rem(20px);
+  }
+}
+
+// About
+.xs-about-us-about {
+  .xs-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .xs-about-us {
+    &,
+    .iconbox-title {
+      color: $white;
+    }
+  }
+}
+.xs-about-icon {
+  .service_svg {
+    height: rem(60px);
+    max-width: rem(60px);
+  }
+  .service_icon {
+    font-size: rem(60px);
+    color: $primary;
+  }
+}
+.iconbox-description {
+  margin-bottom: rem(0px);
+}

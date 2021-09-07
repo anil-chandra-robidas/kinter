@@ -1,0 +1,101 @@
+.dms-option-type-new-icon .option-type-new-icon-list {
+  margin-top: 1em;
+  padding-left: 1px;
+  padding-bottom: 1px;
+  overflow: auto;
+  max-height: 10.1em;
+}
+
+.dms-option-type-new-icon .option-type-new-icon-list:first-child {
+  margin-top: 0;
+}
+
+.dms-option-type-new-icon .option-type-new-icon-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.dms-option-type-new-icon .option-type-new-icon-list i {
+  float: left;
+  border: 1px solid #e1e1e1;
+  margin: 0 0 -1px -1px;
+  padding: 0.5em 0;
+  background-color: #ffffff;
+  text-align: center;
+  min-width: 2em;
+}
+
+body.rtl .dms-option-type-new-icon .option-type-new-icon-list i {
+  float: right;
+}
+
+.dms-option-type-new-icon .option-type-new-icon-list i:before {
+  display: inline-block;
+}
+
+.dms-option-type-new-icon .option-type-new-icon-list i:hover {
+  background: #0074a2;
+  color: #fff;
+  cursor: pointer;
+}
+.dms-option-type-new-icon .option-type-new-icon-list i.active:hover,
+.dms-option-type-new-icon .option-type-new-icon-list i.active {
+  background: #64bd1f;
+  color: #fff;
+}
+
+.dms-option-type-new-icon .dms-backend-option {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.dms-option-type-new-icon .dms-options-tabs-wrapper .dms-options-tabs-contents {
+  margin-top: 0 !important;
+}
+
+/* Let's get this party started */
+
+.dms-option-type-new-icon .option-type-new-icon-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+
+.dms-option-type-new-icon .option-type-new-icon-list::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: rgba(92, 92, 92, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.dms-option-type-new-icon
+  .option-type-new-icon-list::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(92, 92, 92, 0.4);
+}
+
+/* Search */
+.dms-option.dms-option-type-new-icon .dms-icon-search-holder {
+  display: inline-block;
+  clear: both;
+  position: relative;
+  padding: 0 50px 0 0;
+  margin: 10px 0 0 0;
+}
+.dms-option.dms-option-type-new-icon input.dms-icon-search[type="text"] {
+  display: inline-block;
+  margin-right: 30px;
+}
+.dms-option.dms-option-type-new-icon .dms-current-icon {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  float: none;
+  margin: 0;
+  padding: 5px 0;
+  background-color: #ffffff;
+  text-align: center;
+  width: 30px;
+  font-size: 16px;
+}

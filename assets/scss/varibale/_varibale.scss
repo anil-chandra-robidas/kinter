@@ -1,0 +1,48 @@
+$white: #ffffff;
+$black: #000000;
+$black2: #222222;
+
+$primary: #f63c25;
+$secondary: #f5260d;
+
+$rating_color: #fec42d;
+
+$color-dark-red: #c41330;
+
+$social_color: (
+  facebook: #3b5998,
+  twitter: #1da1f2,
+  linkedin: #dd5143,
+  instagram: #fd1d1d
+);
+
+$bodyFont: 'Roboto', sans-serif;
+$titleFont: "Barlow", sans-serif;
+$iconFont: "Font Awesome 5 Free";
+$themeIconFont: "xsfont";
+
+$bodyFontSize: 16px;
+$bodyFontWeight: 400;
+$blineHeight: 24px / $bodyFontSize;
+
+$h1: 36px;
+$h2: 30px;
+$h3: 24px;
+$h4: 18px;
+$h5: 16px;
+$h6: 14px;
+
+$titleColor: #101010;
+$bodyColor: #777777;
+
+@function rem($pixels, $context: $bodyFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}

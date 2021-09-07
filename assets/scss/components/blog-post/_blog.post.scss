@@ -1,0 +1,234 @@
+.xs-blog {
+  position: relative;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+
+  &__BgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    * {
+      height: 100%;
+    }
+    &__container {
+      overflow: unset;
+      img {
+        width: 100%;
+        transform: scale(1.2);
+        @include transition;
+        transition-timing-function: linear;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+
+  &:hover &__BgImg {
+    &__container {
+      img {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  &__content {
+    z-index: 0;
+    padding: rem(40px) rem(25px);
+    background: #fff;
+    @include transition;
+
+    &__data {
+      span,
+      a {
+        margin-right: 15px;
+        color: #f63c25;
+        font-size: rem(16px);
+        font-weight: 400;
+      }
+    }
+
+    &__title {
+      position: relative;
+      margin: 15px 0 40px;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 700;
+      text-transform: none;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        bottom: -22px;
+        width: 30px;
+        height: 2px;
+        content: "";
+        background-color: #e5e5e5;
+      }
+
+      a {
+        color: #101010;
+        @include transition;
+      }
+    }
+
+    &__excerpt {
+      p {
+        color: #666565;
+        font-weight: 400;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__avatar {
+        display: flex;
+        align-items: center;
+        .avatar-img {
+          width: rem(30px);
+          height: rem(30px);
+          margin-right: rem(10px);
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+
+        a {
+          color: #666565;
+        }
+      }
+
+      &__social {
+        position: relative;
+
+        &:hover .xs-social-share {
+          opacity: 1;
+          visibility: visible;
+          bottom: 38px;
+        }
+
+        .xs-social-share-icon {
+          font-size: 20px;
+          color: #f63c25;
+          cursor: pointer;
+          @include transition;
+        }
+
+        .xs-social-share {
+          position: absolute;
+          opacity: 0;
+          visibility: hidden;
+          bottom: 30px;
+          right: -10px;
+          display: block;
+          z-index: 2;
+          white-space: nowrap;
+          padding: 0 8px;
+          border-radius: 5px;
+          -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.09);
+          background-color: #fff;
+          @include transition;
+
+          .xs_share_url {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            position: relative;
+
+            &:before {
+              position: absolute;
+              right: 0px;
+              bottom: -7px;
+              content: "";
+              border-style: solid;
+              border-width: 8px 8.5px 0 8.5px;
+              border-color: #ffffff transparent transparent transparent;
+            }
+            li {
+              min-width: 22px;
+              a {
+                background: transparent !important;
+                box-shadow: unset;
+
+                .xs-social-icon {
+                  padding: 0 !important;
+                }
+                span {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:hover &__content {
+    background: rgba(0, 0, 0, 0.55);
+    &__data span,
+    &__data a {
+      color: #fff;
+      font-weight: 400;
+    }
+
+    &__title a {
+      color: #fff;
+    }
+
+    &__excerpt p {
+      color: #fff;
+    }
+
+    &__footer__avatar a {
+      color: #fff;
+    }
+
+    .xs-social-share-icon {
+      color: #fff;
+    }
+  }
+}
+
+$xs-social-colors: (
+  facebook: #3b5998,
+  twitter: #1da1f2,
+  dribbble: #ea4c89,
+  pinterest: #bd081c,
+  instagram: #5851db,
+  github: #6e5494,
+  linkedin: #0077b5,
+  vkontakte: #45668e,
+  reddit: #ff4500,
+  skype: #00aff0,
+  wordpress: #21759b,
+  google: #4285f4,
+  youtube: #ff0000,
+  vimeo: #1ab7ea,
+  whatsapp: #25d366,
+  mailchimp: #6dc5dc,
+  posts: #36454f,
+  comments: #000000,
+  facebook-messenger: #3b5998,
+  kik: #82bc23,
+  trello: #0079bf,
+  viber: #59267c,
+  telegram: #0088cc,
+  email: #ea4335,
+  digg: #005be2,
+  stumbleupon: #eb4924
+);
+
+@each $link, $color in $xs-social-colors {
+  .xs-blog .xs_share_url .#{$link} .met-social {
+    color: $color;
+  }
+}

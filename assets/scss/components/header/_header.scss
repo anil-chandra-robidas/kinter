@@ -1,0 +1,64 @@
+.xs__menu {
+    height: rem(80px);
+    margin-bottom: rem(41px);
+    background-color: $white;
+
+    .elementskit-navbar-nav {
+        >li {
+
+            >a {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    content: "";
+                    height: rem(4px);
+                    width: 0%;
+                    background-color: #657a84;
+                    @include transition;
+                }
+
+                &:hover,
+                &.active {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &:hover {
+                >a {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .elementskit-navbar-nav {
+        >li {
+            >a {
+                border-right: 1px solid rgba($color: #657a84, $alpha: .1);
+            }
+        }
+    }
+
+    .ekit_navSidebar-button {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: rem(-10px);
+            color: #657a84;
+            border-top: rem(7px) solid currentColor;
+            border-right: rem(5px) solid currentColor;
+            border-left: rem(5px) solid transparent;
+            border-bottom: rem(7px) solid transparent;
+        }
+    }
+}

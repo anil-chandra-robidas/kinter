@@ -1,0 +1,42 @@
+/**
+ * Prefix (namespace) all css rules with ".dms-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.dms-multi-inline-group {
+  display: block;
+}
+.dms-backend-option-type-dms-multi-inline {
+  display: block;
+}
+.dms-backend-option-type-dms-multi-inline .dms-multi-inline-holder {
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.dms-backend-option-type-dms-multi-inline .dms-multi-holding-spinner {
+  margin: 0;
+}
+.dms-backend-option-type-dms-multi-inline .dms-multi-inline-title {
+  display: block;
+  clear: both;
+  margin: 0 5px 5px 0;
+  font-weight: bold;
+}
+
+.dms-backend-option-type-dms-multi-inline
+  .dms-multi-inline-holder
+  .thz-spinners-holder {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.dms-backend-option-type-dms-multi-inline .dms-multi-holding-select select {
+  height: 27px;
+  line-height: 27px;
+}
+
+.dms-backend-option-type-dms-multi-inline
+  input[type="text"].dms-option-type-thz-color-picker {
+  max-width: 160px;
+}
