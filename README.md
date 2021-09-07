@@ -1,1 +1,1 @@
-# kinter-new
+# kinter
